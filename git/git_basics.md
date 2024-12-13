@@ -1,4 +1,4 @@
-# Basic Git workflow
+# Basic Git workflow and commands
 
 ## Setting up a new repository and local project with GitHub and SSH
 1. Generate SSH keypair on your local machine
@@ -28,5 +28,36 @@ Downstream branch 'origin/main' *---*---*---*---*---*---*---*---*---*---*>
 * Downstream - data being pulled from a remote branch to a local one
 * Upstream - data being pushed from a local branch to a remote one
 
+## HEAD pointer
+A HEAD pointer i
+
 ## Common commands
-*
+* $ git init - Initialize empty git repository
+* $ git status - Check status of your git repository
+* $ git add <filename1.ext filename2.ext, .> - Add multiple or all files for
+  staging
+* $ git commit -m "Commit message." - Create a commit with staged files
+
+* $ git checkout <commit_hash, branch_name> - Checkout a specific commit or
+  existing branch
+* $ git checkout -b <branch_name> - Create a new branch and checkout
+* $ git branch - List all branches
+* $ git branch -d <branch_name> - Delete local branch
+
+* git diff - Show changes against last commit
+* git log --oneline - Show a log of commits (in one line)
+
+* $ git push -u <remote_name> <branch_name> - Push changes to a remote branch
+  (-u sets up current remote branch as upstream branch for argument-less
+  'git pull')
+* $ git pull <remote_name> <branch_name> - Pull changes from a remote branch
+* $ git push -d <remote_name> <branch_name> - Delete remote branch
+
+* $ git config --global user.name "username" - Set git username (shows up as
+  commit author name)
+* $ git config --global user.email "email" - Set git email
+* $ git config --list - List git config information
+
+* $ git reset --HARD~1 - Go back one commit
+* $ git revert - Create a new commit undoing changes done by in commit
+* TODO: Continue with reverting changes.
