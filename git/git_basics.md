@@ -69,16 +69,11 @@ A HEAD pointer i
 * `$ git reset <filename1.ext filename2.ext or .>` - Unstage file(s)
 
 ### Merging branches
-* `$ git merge -ff <branch_to_merge>` - Fast forward merge. Default behavior (can omit -ff) if the
-  main branch hasn't been modified. Fast forward merge. If main branch hasn't
-  been modified since creating the feature branch, commits from the feature
-  branch are appended to the main branch)
-
-
-* `$ git merge --no-ff <branch_to_merge>` - Creates a new commit on the main
-  branch indicating the merge
-* `$ git merge <branch_to_merge>` - [Default Git Merge] If main branch has been
-  changed since creating the feature branch, commits from the feature branch are
-  appended to the main branch and a new commit is created indicating the merge.
-  Often requires solving a merge conflict.
-* $ git merge
+* `$ git merge -ff <branch_to_merge>` - "Fast-forward" merge. Default behavior
+  (can omit -ff) if the main branch hasn't been modified. Commits from the
+  feature branch are appended to the main branch)
+* `$ git merge --no-ff <branch_to_merge>` - "Non-fast-forward merge". Default
+  behavior (can omit --no-ff) if the main branch has been modified. Usually
+  requires solving a merge conflict. Commits from the feature branch are
+  appended to the main branch) and a new commit with merge conflict changes is
+  created on the main branch indicating successful merge
