@@ -42,7 +42,9 @@
 * `$ git branch -d <branch_name>` - Delete local branch
 
 ## HEAD pointer
-* --- WORK IN PROGRESS ---
+* HEAD is a pointer to the most recent commit in the current branch (usually)
+* HEAD~n is a pointer to the n'th commit from the latest, e.g. HEAD~1 would
+  point to one commit back from latest, HEAD~2 - 2 back and so on
 
 ## Logs
 * `git diff` - Show changes against last commit
