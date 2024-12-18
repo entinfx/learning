@@ -18,12 +18,12 @@
    `$ git push -u origin main`
 
 ## Upstream/downstream terminology
-    Upstream branch 'origin/main'   *---*---*---*---*---*---*---*---*---*---*>
-                                    |   |   |   |   |   |   |   |   |   |   |
-                                    |   |   |   |   |   |   |   |   |   |   |
-                                    |   |   |   |   |   |   |   |   |   |   |
-                                    |   |   |   |   |   |   |   |   |   |   |
-    Downstream branch 'origin/main' *---*---*---*---*---*---*---*---*---*---*>
+    *---*---*---*---*---*---*---*---*---*---*> - upstream branch 'origin/main'
+    |   |   |   |   |   |   |   |   |   |   |
+    |   |   |   |   |   |   |   |   |   |   |
+    |   |   |   |   |   |   |   |   |   |   |
+    |   |   |   |   |   |   |   |   |   |   |
+    *---*---*---*---*---*---*---*---*---*---*> - downstream branch 'origin/main'
 
 * Downstream - data being pulled from a remote branch to a local one
 * Upstream - data being pushed from a local branch to a remote one
