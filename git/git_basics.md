@@ -42,7 +42,12 @@
 * `$ git branch -d <branch_name>` - Delete local branch
 
 ## HEAD pointer
-* HEAD is a pointer to the most recent commit in the current branch (usually)
+* HEAD is a pointer to the currently checked out branch that in itself points to
+  a specific [usually latest] commit
+* There is only 1 HEAD pointer at any given time
+* Detached HEAD - Checking out a commit from history puts HEAD in a detached
+  state, where it no longer points to the latest commit of the branch, but
+  rather to a currently checked out [non-latest] commit
 * HEAD~n is a pointer to the n'th commit from the latest, e.g. HEAD~1 would
   point to one commit back from latest, HEAD~2 - 2 back and so on
 
@@ -111,4 +116,9 @@
 * `$ git push -d <remote_name> <branch_name>` - Delete remote branch
 
 ## Forks and pull requests
-* --- WORK IN PROGRESS ---
+Pull request is a request to have your changes accepted to a public repository.
+1. Fork a repository you want to contribute to on GitHub
+2. Setup a local repository, and pull down the project from the GitHub fork
+3. Create a new branch to work on your feature you want to add
+4. Create changes and push them to your GitHub fork
+5. Head over to your GitHub fork and press the "Pull request" button
