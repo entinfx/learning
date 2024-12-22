@@ -48,7 +48,7 @@
 * Detached HEAD - Checking out a commit from history puts HEAD in a detached
   state, where it no longer points to the latest commit of the branch, but
   rather to a currently checked out [non-latest] commit
-* HEAD~n is a pointer to the n'th commit from the latest, e.g. HEAD~1 would
+* HEAD\~n is a pointer to the n'th commit from the latest, e.g. HEAD\~1 would
   point to one commit back from latest, HEAD~2 - 2 back and so on
 
 ## Logs
