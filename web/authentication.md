@@ -20,3 +20,11 @@ Sessions flow:
 Features:
 * Sessions on the server are stored in the database, cache (like Redis or
   Memcached) or memory.
+* Used in Server Side Applications (e.g. Rails, Spring, Express, Laravel, etc.)
+* Cookies are part of HTTP Header
+* Consists of key-value pairs (also attributes/flags)
+
+Security:
+* Cookies are signed (HMAC) by the server to prevent tampering
+* ? Rarely encrypted (AES) because there's not much point since cookies on
+  client have 1-1 relationship with the server's session
